@@ -1,0 +1,136 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+body {
+  color: white;
+  height: 100vh;
+  background: #151515;
+  animation-name: background-anim;
+  animation-duration: 1s;
+  animation-delay: 0.25s;
+  animation-fill-mode: backwards;
+  animation-timing-function:ease-in-out;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  overflow-y: auto;
+  margin: 0;
+}
+
+@keyframes background-anim {
+  from {
+    background: linear-gradient(
+      200.96deg,
+      #fda7df -29.09%,
+      #d980fa 51.77%,
+      #9980fa 129.35%
+    );
+  }
+  to {
+    background: #151515;
+  }
+}
+
+h1 {
+  font-weight: 100;
+}
+
+h2 {
+  font-weight: 100;
+  color: #909090;
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+h3 {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+p {
+  color: #cccccc;
+  font-weight: 100;
+  letter-spacing: 0.2px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+button {
+  background-color: #00000000;
+  font-size: 12px;
+  border: 1px solid #9980fa;
+  color: #9980fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  border-radius: 4px;
+  transition: 0.1s;
+}
+
+button:hover {
+  filter: brightness(0.8);
+  cursor: pointer;
+}
+
+input {
+  background-color: #202020;
+  border: 1px solid #909090;
+  border-radius: 3px;
+  padding: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #cccccc;
+  letter-spacing: 0.3px;
+  transition: 0.1s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #9980fa;
+  color: white;
+}
+
+.page-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  opacity: 1;
+  animation-name: page-content-anim;
+  animation-duration: 0.1s;
+}
+
+@keyframes page-content-anim {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.page-content > div {
+  width: 80%;
+  max-width: 1000px;
+}
+
+.detail-box {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.detail-box > div {
+  background: #1c1c1c;
+  padding: 10px;
+  width: 70%;
+  border-radius: 5px;
+  border: 1px solid #555555;
+}
+
+.detail-box > div > p {
+  font-size: 13px;
+  line-height: 23px;
+}
+
+.detail-box > div > button {
+  margin-left: 5px;
+}

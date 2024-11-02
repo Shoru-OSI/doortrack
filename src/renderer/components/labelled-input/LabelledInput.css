@@ -1,0 +1,22 @@
+.labelled-input-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.labelled-input {
+  width: 60%;
+  max-width: 705px;
+  margin-top: 20px;
+}
+
+.labelled-input-label {
+  font-size: 12px;
+  margin: 0;
+  color: #909090;
+  letter-spacing: 0.7px;
+}
+
+.labelled-input-area {
+  width: 100%;
+}

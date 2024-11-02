@@ -1,0 +1,67 @@
+.home-page {
+  width: 100%;
+  opacity: 1;
+  animation-name: home-page-anim;
+  animation-duration: 0.1s;
+}
+
+@keyframes home-page-anim {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.home-header {
+  width: 100%;
+  height: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #181818;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-header-section {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-header-button {
+  font-size: 12px;
+  width: 15px;
+  border: 1px solid #959595;
+  color: #959595;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  border-radius: 4px;
+  transition: 0.1s;
+}
+
+.home-header-button:hover {
+  filter: brightness(0.8);
+  cursor: pointer;
+}
+
+.app-logo {
+  height: 100%;
+}
+
+.app-title {
+  font-weight: 100;
+  height: 45px;
+  color: #eeeeee;
+  user-select: none;
+}
+
+.app-subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: lowercase;
+  color: #909090;
+  height: 10px;
+  user-select: none;
+}

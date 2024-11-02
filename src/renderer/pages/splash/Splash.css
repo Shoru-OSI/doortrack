@@ -1,0 +1,64 @@
+.splash-page {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash-logo {
+  animation-delay: 0.25s;
+  animation-fill-mode:backwards;
+  animation-name: splash-logo-anim;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes splash-logo-anim {
+  from {
+    scale: 1.2;
+    filter: brightness(0);
+  }
+  to {
+    scale: 1;
+    filter: brightness(1);
+  }
+}
+
+.splash-contents {
+  display: flex;
+  animation-name: splash-contents-anim;
+  animation-duration: 0.2s;
+  animation-delay: 4.2s;
+  opacity: 0;
+  animation-fill-mode: backwards;
+}
+
+@keyframes splash-contents-anim {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.splash-name {
+  display: flex;
+  gap: 12px;
+  height: 200px;
+  align-items: center;
+  text-wrap: nowrap;
+  width: 280px;
+  animation-name: splash-name-anim;
+  animation-delay: 2.25s;
+  animation-fill-mode:backwards;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  overflow-x: hidden;
+}
+
+@keyframes splash-name-anim {
+  from {
+    width: 0;
+  }
+  to {
+    width: 280px;
+  }
+}

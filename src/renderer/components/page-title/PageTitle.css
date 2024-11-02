@@ -1,0 +1,23 @@
+.page-title {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-bottom: 1px solid #505050;
+  padding-bottom: 10px;
+}
+
+.page-title > h1 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.page-title-back-button {
+  margin-left: 5px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.page-title-back-button:hover {
+  filter: brightness(0.7);
+}
